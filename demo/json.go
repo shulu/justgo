@@ -12,8 +12,8 @@ type response1 struct {
 }
 
 type response2 struct {
-	Page   int
-	Fruits []string
+	Page   int      `json:"page"`
+	Fruits []string `json:"fruits"`
 }
 
 func main() {

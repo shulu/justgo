@@ -6,9 +6,9 @@ import (
 	"net/http"
 )
 
-func ParseBody(r *http.Request, X interface{}) {
-	if body, err := ioutil.ReadAll(r.Body); err != nil {
-		if err := json.Unmarshal([]byte(body), X); err != nil {
+func ParseBody(r *http.Request, x interface{}) {
+	if body, err := ioutil.ReadAll(r.Body); err == nil {
+		if err := json.Unmarshal([]byte(body), x); err != nil {
 			return
 		}
 	}

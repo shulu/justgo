@@ -1,0 +1,4 @@
+{
+  "functionTemplate": "// ${func_name} \n // @receiver ${receiver_name_type} \n // @param ${param_name_type} \n // @return ${return_name_type} \n // @date ${date} \n // @author ${git_name}",
+  "typeTemplate": "// ${type_name} "
+}
